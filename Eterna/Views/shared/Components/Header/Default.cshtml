@@ -1,0 +1,47 @@
+﻿@using Eterna.Properties.ViewModels
+@model HomeVM
+<header>
+        <div class="header">
+            <div class="container ">
+                <div class="row">
+                    <div class="contact col-lg-6 col-md-6 d-flex align-items-center">
+                        <div class="gmail"><i><i class="@Model.Settings.GmailIcon"></i></i>@Model.Settings.Gmail <span></span>
+                        </div>
+
+                        <div class="phone"><i><i class="@Model.Settings.PhoneIcon"></i></i><span>@Model.Settings.Phone</span></div>
+                    </div>
+                    <div class="socialmedias col-md-6 d-md-flex   justify-content-end">
+                        @foreach (HeaderSocialMedias socialMedias in Model.headerSocialMedias)
+                       {
+                           <a href=""><i
+                                class="@socialMedias.SocialUrl"></i></a>
+                       }         
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="eterna d-flex justify-content-between align-items-center ">
+                    <div class="logo col-lg-6 col-md-6">
+
+                       <h1><span>@Model.AnotherSettings.Value</span></h1>
+                    </div>
+                    <nav class="navbar col-lg-6 col-md-6">
+                        <ul class="d-flex">
+                            <li><a href="">Home</a></li>
+                            <li> <a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Portfoilo</a></li>
+                            <li><a href="">Team</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider .myslider {
+  height: 655px;
+  display: none;
+  overflow: hidden;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  color: gray;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  color: black;
+}
+
+.next {
+  right: 0;
+}
+
+.dotsbox {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
+  bottom: -50px;
+}
+
+.dot {
+  display: inline block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #e96b56;
+}
+
+.active,
+.dot:hover {
+  display: inline block;
+  width: 5px;
+  height: 5px;
+  border: 3px solid white;
+  border-radius: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  -webkit-animation-duration: 5000s;
+          animation-duration: 5000s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes posi {
+  from {
+    left: 25%;
+  }
+  to {
+    left: 5%;
+  }
+}
+
+@keyframes posi {
+  from {
+    left: 25%;
+  }
+  to {
+    left: 5%;
+  }
+}
+
+.slider .txt {
+  position: absolute;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 25px;
+  top: 25%;
+  left: 3%;
+  -webkit-animation-name: posi;
+  -webkit-animation-duration: 2s;
+  animation-name: posi;
+  animation-duration: 2s;
+  z-index: 1;
+}
+
+.slider .txt h1 {
+  color: #0d0d0d;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.slider .txt span h1 {
+  color: orangered;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.slider .txt p {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.slider .txt a {
+  border-radius: 50%;
+  background-color: orangered;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .myslider {
+    height: 500px;
+  }
+  .txt {
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-animation-name: posi2;
+    -webkit-animation-duration: 2s;
+    animation-name: posi2;
+    animation-duration: 2s;
+  }
+}
+
+@-webkit-keyframes posi2 {
+  from {
+    top: 35%;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes posi2 {
+  from {
+    top: 35%;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+.slider .txt h1 {
+  font-size: 30px;
+}
+
+.slider .txt p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 520px) {
+  .txt h1 {
+    font-size: 30px;
+  }
+}
+
+.card .container .row .cards {
+  margin-top: 100px;
+  margin: 40px 0 0 0;
+}
+
+.card .container .row .cards .lorem {
+  margin: 0px 0 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 15px black;
+          box-shadow: 0 2px 15px black;
+  padding: 30px 20px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+.card .container .row .cards .lorem i {
+  color: #e96b56;
+  font-size: 30px;
+  display: block;
+  line-height: 0;
+  margin-bottom: 18px;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+.card .container .row .cards .lorem h1 {
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.card .container .row .cards .lorem p {
+  margin-top: 20px;
+}
+
+.card .container .row .cards .dolor {
+  margin: 0px 0 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 15px black;
+          box-shadow: 0 2px 15px black;
+  padding: 10px 5px;
+  height: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  margin-left: 20px;
+}
+
+.card .container .row .cards .dolor i {
+  color: #e96b56;
+  font-size: 30px;
+  display: block;
+  line-height: 0;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.card .container .row .cards .dolor h1 {
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.card .container .row .cards .dolor p {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.card .container .row .cards .sed {
+  margin: 0px 0 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 15px black;
+          box-shadow: 0 2px 15px black;
+  padding: 10px 5px;
+  height: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  margin-left: 20px;
+}
+
+.card .container .row .cards .sed i {
+  color: #e96b56;
+  font-size: 30px;
+  display: block;
+  line-height: 0;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.card .container .row .cards .sed h1 {
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.card .container .row .cards .sed p {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.card:hover .container:hover .row:hover .cards:hover {
+  margin-top: 50px;
+  margin: 40px 0 0 0;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .lorem:hover {
+  margin: 0px 0 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 15px black;
+          box-shadow: 0 2px 15px black;
+  padding: 30px 20px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+  background-color: #e96b56;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .lorem:hover i:hover {
+  color: white;
+  font-size: 30px;
+  display: block;
+  line-height: 0;
+  margin-bottom: 18px;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .lorem:hover h1:hover {
+  color: white;
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .lorem:hover p:hover {
+  color: white;
+  margin-top: 20px;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .dolor:hover {
+  margin: 0px 0 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 15px black;
+          box-shadow: 0 2px 15px black;
+  padding: 10px 5px;
+  height: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  margin-left: 20px;
+  background-color: #e96b56;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .dolor:hover i:hover {
+  color: white;
+  font-size: 30px;
+  display: block;
+  line-height: 0;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .dolor:hover h1:hover {
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 30px;
+  margin-left: 40px;
+  color: white;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .dolor:hover p:hover {
+  color: white;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .sed:hover {
+  margin: 0px 0 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 15px black;
+          box-shadow: 0 2px 15px black;
+  padding: 10px 5px;
+  height: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  margin-left: 20px;
+  background-color: #e96b56;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .sed:hover i:hover {
+  color: white;
+  font-size: 30px;
+  display: block;
+  line-height: 0;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .sed:hover h1:hover {
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 30px;
+  margin-left: 40px;
+  color: white;
+}
+
+.card:hover .container:hover .row:hover .cards:hover .sed:hover p:hover {
+  color: white;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.about .container .row .boxing {
+  margin-top: 40px;
+}
+
+.about .container .row .boxing .image img {
+  width: 95%;
+}
+
+.about .container .row .boxing .text h3 {
+  font-size: 25px;
+  opacity: 85%;
+}
+
+.about .container .row .boxing .text .italic {
+  font-style: italic;
+}
+
+.about .container .row .boxing .text ul li {
+  padding: 5px;
+  list-style: none;
+}
+
+.about .container .row .boxing .text ul li i {
+  color: #e96b56;
+  margin-right: 10px;
+  border: 1px solid orangered;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.clients .container .row .title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.clients .container .row .title h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.clients .container .row .title h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #e96b56;
+  bottom: 0;
+  left: calc(50% - 33px);
+}
+
+.carousels .owl-carousel .owl-item {
+  border: 1px solid white;
+}
+
+.carousels .owl-carousel .owl-nav {
+  display: none;
+}
+
+.carousels .item img {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  max-width: 25%;
+  margin-top: 30px;
+}
+
+.carousels:hover .owl-carousel:hover .owl-item:hover {
+  border: 1px solid white;
+}
+
+.carousels:hover .owl-carousel:hover .owl-nav:hover {
+  display: none;
+}
+
+.carousels:hover .item:hover img:hover {
+  opacity: 100;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  max-width: 25%;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=inde2.css.map */

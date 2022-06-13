@@ -1,0 +1,520 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header {
+  background-color: #404040;
+}
+
+header .container .row {
+  padding: 10px;
+}
+
+header .container .row .contact {
+  color: white;
+}
+
+header .container .row .contact i {
+  color: orangered;
+}
+
+header .container .row .phone {
+  margin-left: 15px;
+}
+
+header .container .row .socialmedias i {
+  font-size: 17px;
+  padding-left: 10px;
+  color: #9e9a9a;
+}
+
+header .container:hover .row:hover {
+  padding: 10px;
+}
+
+header .container:hover .row:hover .contact:hover {
+  color: white;
+}
+
+header .container:hover .row:hover .contact:hover i {
+  color: orangered;
+}
+
+header .container:hover .row:hover .phone:hover {
+  margin-left: 15px;
+}
+
+header .container:hover .row:hover .socialmedias:hover i:hover {
+  font-size: 17px;
+  padding-left: 10px;
+  color: white;
+}
+
+header .eterna {
+  margin-top: 20px;
+}
+
+header .eterna h1 {
+  font-size: 36px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-left: 7px solid orangered;
+}
+
+header .eterna .navbar ul {
+  list-style: none;
+}
+
+header .eterna .navbar ul li {
+  padding-left: 20px;
+}
+
+header .eterna .navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.eterna:hover {
+  margin-top: 20px;
+}
+
+.eterna:hover h1:hover {
+  font-size: 36px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.eterna:hover .navbar:hover ul {
+  list-style: none;
+}
+
+.eterna:hover .navbar:hover ul li:hover {
+  padding-left: 20px;
+}
+
+.eterna:hover .navbar:hover ul li:hover a {
+  text-decoration: none;
+  color: orangered;
+}
+
+main .brand {
+  margin-top: 20px;
+  background-color: #f1eeee;
+}
+
+main .services .container .row .col-lg-4 .box {
+  border: 1px solid #b8b8b8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .services .container .row .col-lg-4 .text {
+  text-align: center;
+  margin-top: 30px;
+}
+
+main .services .container .row .icon {
+  text-align: center;
+  margin-top: 30px;
+}
+
+main .services .container .row .icon i {
+  border: 20px solid red;
+  background-color: red;
+  font-size: 25px;
+  color: white;
+}
+
+main .services .container .row .box:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: red;
+}
+
+main .services .container .row .box:hover .text:hover {
+  color: white;
+}
+
+main .services .container .row .box:hover .text:hover .icon:hover i:hover {
+  border: 20px solid white;
+  background-color: white;
+  color: red;
+}
+
+main .skills .our {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main .skills .our::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  background-color: #d60000;
+  margin-left: -45px;
+}
+
+main .skills .magnam {
+  margin-top: 40px;
+  width: 90%;
+  text-align: center;
+}
+
+main .skills .magnam .italic {
+  font-style: italic !important;
+}
+
+main .skills .container .row .image img {
+  width: 600px;
+  height: 600px;
+}
+
+main .skills .container .name {
+  margin-top: 40px;
+}
+
+main .skills .container .interest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+main .skills .progress {
+  margin: 50px 0 0 0;
+}
+
+main .skills .progress .progress-bar {
+  background-color: orangered;
+}
+
+main .skills .volup .italic {
+  font-style: italic !important;
+}
+
+footer .footer-wrap {
+  background-color: #404040;
+  margin-top: 30px;
+}
+
+footer .footer-wrap .container .row .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-wrap .container .row .footer .text {
+  color: white;
+  margin-top: 30px;
+}
+
+footer .footer-wrap .container .row .footer .form {
+  position: relative;
+  border-radius: 50px;
+}
+
+footer .footer-wrap .container .row .footer .form form {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+footer .footer-wrap .container .row .footer .form form .email {
+  padding: 10px;
+  width: 70%;
+  border-radius: 50px;
+}
+
+footer .footer-wrap .container .row .footer .form form .submit {
+  position: absolute;
+  border-radius: 50px;
+  background-color: orangered;
+  border: 1px solid orangered;
+  opacity: 80%;
+  color: white;
+  font-size: 25px;
+  margin-top: 4px;
+  margin-right: 7px;
+}
+
+footer .footer-menu {
+  background-color: #3b3b3b;
+}
+
+footer .footer-menu .footer {
+  margin-top: 20px;
+}
+
+footer .footer-menu .footer .container .row .useful h4 {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+footer .footer-menu .footer .container .row .useful ul li {
+  list-style: none;
+  padding: 6px;
+}
+
+footer .footer-menu .footer .container .row .useful ul li i {
+  color: orangered;
+  opacity: 90%;
+}
+
+footer .footer-menu .footer .container .row .useful ul li a {
+  margin-left: 9px;
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer-menu .footer .container .row .our h4 {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+footer .footer-menu .footer .container .row .our ul li {
+  list-style: none;
+  padding: 6px;
+}
+
+footer .footer-menu .footer .container .row .our ul li i {
+  color: orangered;
+}
+
+footer .footer-menu .footer .container .row .our ul li a {
+  margin-left: 9px;
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer-menu .footer .container .row .contact {
+  color: white;
+}
+
+footer .footer-menu .footer .container .row .contact h4 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+footer .footer-menu .footer .container .row .contact .title {
+  margin-top: 20px;
+  width: 60%;
+  margin-left: 10px;
+}
+
+footer .footer-menu .footer .container .row .contact .phone {
+  margin-left: 10px;
+}
+
+footer .footer-menu .footer .container .row .contact .phone .number {
+  margin-left: 5px;
+}
+
+footer .footer-menu .footer .container .row .contact .email {
+  margin-left: 10px;
+}
+
+footer .footer-menu .footer .container .row .contact .email .email-adress {
+  margin-left: 5px;
+}
+
+footer .footer-menu .footer .container .row .about {
+  color: white;
+}
+
+footer .footer-menu .footer .container .row .about .title {
+  margin-top: 20px;
+}
+
+footer .footer-menu .footer .container .row .about .social-medias a {
+  font-size: 20px;
+  display: inline block;
+}
+
+footer .footer-menu .footer .container .row .about .social-medias a i {
+  background-color: grey;
+  border-radius: 50%;
+  margin: 5px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+}
+
+footer .footer-menu:hover {
+  background-color: #3b3b3b;
+}
+
+footer .footer-menu:hover .footer:hover {
+  margin-top: 20px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .useful h4 {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .useful ul li {
+  list-style: none;
+  padding: 6px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .useful ul li i {
+  color: orangered;
+  opacity: 90%;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .useful ul li a:hover {
+  margin-left: 9px;
+  text-decoration: none;
+  color: orangered;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .our:hover h4 {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .our:hover ul li {
+  list-style: none;
+  padding: 6px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .our:hover ul li i {
+  color: orangered;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .our:hover ul li a:hover {
+  margin-left: 9px;
+  text-decoration: none;
+  color: orangered;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .contact {
+  color: white;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .contact h4 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .contact .title {
+  margin-top: 20px;
+  width: 60%;
+  margin-left: 10px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .contact .phone {
+  margin-left: 10px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .contact .phone .number {
+  margin-left: 5px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .contact .email {
+  margin-left: 10px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .contact .email .email-adress {
+  margin-left: 5px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .about {
+  color: white;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .about .title {
+  margin-top: 20px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .about .social-medias a {
+  font-size: 20px;
+  display: inline block;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .about .social-medias a i {
+  background-color: grey;
+  border-radius: 50%;
+  margin: 5px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .about:hover {
+  color: white;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .about:hover .title:hover {
+  margin-top: 20px;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .about:hover .social-medias:hover a:hover {
+  font-size: 20px;
+  display: inline block;
+}
+
+footer .footer-menu:hover .footer:hover .container .row .about:hover .social-medias:hover a:hover i:hover {
+  background-color: orangered;
+  border-radius: 50%;
+  margin: 5px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+}
+
+footer .footer-end .copy {
+  background-color: #404040;
+}
+
+footer .footer-end .copy .container .row .footer {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+footer .footer-end .copy .container .row .footer .designed {
+  margin-top: 10px;
+}
+
+footer .footer-end .copy .container .row .footer .designed span a {
+  text-decoration: none;
+  color: orangered;
+}
+
+footer .footer-end .stickyicon {
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0px 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+}
+
+footer .footer-end .stickyicon a {
+  color: orangered;
+}
+/*# sourceMappingURL=index.css.map */

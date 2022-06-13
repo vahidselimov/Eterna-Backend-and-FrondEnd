@@ -1,0 +1,112 @@
+﻿@using Eterna.Properties.ViewModels
+@model HomeVM
+<footer>
+    <div class="footer-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="footer">
+                    <div class="text col-lg-4 col-md-12">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    </div>
+                    <div class="form col-lg-8 col-md-12">
+                        <form method="post">
+                            <input type="email" class="email"><input type="submit"
+                                                                     class="submit" value="subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-menu">
+        <div class="container">
+            <div class="row">
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="useful col-lg-3 col-md-6">
+                                <h4>USEFUL LINKS</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-angle-right"></i><a href="">Home</a></li>
+                                    <li><i class="fa-solid fa-angle-right"></i><a href="">About us</a></li>
+                                    <li><i class="fa-solid fa-angle-right"></i><a href="">Services</a></li>
+                                    <li><i class="fa-solid fa-angle-right"></i><a href="">Tems of services</a></li>
+                                    <li><i class="fa-solid fa-angle-right"></i><a href="">Privacy policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="our col-lg-3 col-md-6">
+                                <h4>OUR SERVICES</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-angle-right"></i><a href="">Web Design</a></li>
+                                    <li><i class="fa-solid fa-angle-right"></i><a href="">Web Development</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="">
+                                            Product Management
+                                        </a>
+                                    </li>
+                                    <li><i class="fa-solid fa-angle-right"></i><a href="">Marketing</a></li>
+                                    <li><i class="fa-solid fa-angle-right"></i><a href="">Graphic Design</a></li>
+                                </ul>
+                            </div>
+                            <div class="contact col-lg-3 col-md-6">
+                                <h4>Contact Us</h4>
+                                <div class="title">
+                                    <p>
+                                        A108 Adam Street
+                                        New York, NY 535022
+                                        United States
+                                    </p>
+                                </div>
+                                <div class="phone">
+                                    <span>Phone:</span><span class="number">@Model.Settings.Phone</span>
+                                </div>
+                                <div class="email">
+                                    <span>Email:</span><span class="email-adress">
+                                        @Model.Settings.Gmail
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="about col-lg-3 col-md-6">
+                                <h4>About Eterna</h4>
+                                <div class="title">
+                                    <p>
+                                        Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra
+                                        videa magna derita valies darta donna mare fermentum iaculis eu non diam
+                                        phasellus.
+                                    </p>
+                                </div>
+                                <div class="social-medias col-lg-12 col-md-12">
+                                    <div class="icon">
+                                      @foreach (FooterSocialMedias socialMedias in Model.FooterSocialMedias)
+                                     {
+                                           <a href=""><i class="@socialMedias.FooterSocialMediasUrl"></i></a>
+                                     }
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-end">
+            <div class="copy">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer">
+                            <div class="rigth">
+                                <div class="text">© Copyright <strong><span>Eterna</span>. All Rights Reserved</strong>
+                                </div>
+                            </div>
+                            <div class="designed">Designed by <span><a href="">Bootstrap Made</a></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stickyicon"><a href=""><i class="@Model.FooterIcon.IconUrl"></i></a></div>
+            </div>
+        </div>
+</footer>
