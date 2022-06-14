@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mIFjOkKe8hKDwG7h8u/fATipgWswB//eV7H414sMuI3ZQtNZZoX8U6eA3QVcQNbDUikqktjIezKSmoAfxisRJg==",
+  "dgSpecHash": "7hQpbO7wVLMx8nhnH7ZaEfxhiQrVOCQavrYcU9cyc4wxNBJBB5fWlHKbuRhxmu7x+xjOY5W7XRftOXPHLN/A7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\source\\repos\\Eterna\\Eterna\\Eterna.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\Eternaa\\Eterna\\Eterna.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

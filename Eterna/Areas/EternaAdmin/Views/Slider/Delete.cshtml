@@ -1,0 +1,29 @@
+﻿@using Eterna.Models
+@model Slider
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div>
+    <div>
+        <h4>
+            Id
+        </h4>
+        <p>
+            @Model.Id
+        </p>
+    </div>
+    <div>
+        <h4>
+            image
+        </h4>
+        <p>
+            @Model.Image
+        </p>
+    </div>
+</div>
+<form method="post" class="mt-4">
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+

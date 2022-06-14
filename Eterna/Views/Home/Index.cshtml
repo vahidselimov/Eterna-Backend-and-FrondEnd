@@ -2,9 +2,9 @@
 <main>
        
 <div class="slider">
-          @foreach (Slider slider in Model)
+        @*  @foreach (Slider slider in Model)
          {
-               <div class="myslider fade  ">
+               <div class="myslider fade  d-block ">
                 <div class="txt text-center">
                     <h1>@slider.BigText </h1><span>
                         <h1>@slider.ColorText</h1>
@@ -15,7 +15,7 @@
                 <img src="../assets/image/@slider.Image" alt="">
             
         </div>
-         }
+         }*@
             
         </div>
         <a href="" class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
